@@ -1,0 +1,197 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  position: relative;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+li,
+p {
+  font-family: sans-serif;
+  color: #444;
+} */
+h1,
+h2,
+h3,
+h4 {
+  color: rgba(62, 185, 187, 0.955);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+  /* text-transform: uppercase; */
+  font-style: italic;
+  /* color: #3eb9bbf4; */
+}
+h2 {
+  font-size: 38px;
+  /* background-color: orange; */
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  background-color: #fafa00;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  right: -25px;
+  top: -6px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+#copyright {
+  font-size: 16px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.bullet-point {
+  list-style: none;
+}
+.main-header {
+  background-color: #fbfbfb;
+  border-top: solid #3eb9bbf4;
+  border-bottom: solid #3eb9bbf4;
+  padding: 40px 40px; /* first 40 for top-bottom, second fot left-right*/
+  padding: 20px;
+  text-align: center;
+  margin: 30px;
+}
+aside {
+  background-color: #f0f0f0;
+  border-top: solid #3eb9bbf4;
+  border-bottom: solid #3eb9bbf4;
+  position: relative;
+}
+/* we can use dotted and dashed borders also */
+body {
+  background-color: rgb(217, 252, 255);
+}
+li:first-child {
+  font-weight: bold;
+}
+/* li:nth-child(3) {
+  font-style: italic;
+} */
+/* we can apply odd or even istead of 3 in above */
+/* header p:first-child {
+  font-weight: bold;
+} this doent make any sense beache its not p tag first inside header */
+a {
+  color: blue;
+}
+a:link {
+  color: rgb(244, 221, 14);
+  text-decoration: none;
+}
+/* txt decoration none to get rid of link underlines */
+a:visited {
+  color: rgb(238, 25, 25);
+}
+/* a:hover is for = when we move cursor to link */
+/* it will chng style of link */
+a:hover {
+  text-decoration: underline dashed rgb(4, 73, 92);
+  font-weight: bold;
+  color: rgb(186, 80, 232);
+}
+a:active {
+  color: black;
+}
+/* these all will be in sequence LVHA */
+/* resolving conflicts between selectors  */
+/* #copyright {
+  background-color: antiquewhite;
+}
+.copyright {
+  background-color: yellow;
+}
+.text {
+  background-color: red;
+}
+footer {
+  background-color: pink !important;
+} */
+.post-img {
+  width: 60%;
+  height: 100%;
+}
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  /* position: relative; */
+}
+/* nav a:link {
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+} */
+nav:a:last-child {
+  margin: 40px;
+}
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  right: 50px;
+  bottom: 50px;
+}
+/* LAYOUTS - FLOATS */
+.author-img {
+  float: left;
+  margin-right: 10px;
+}
+.author {
+  margin-left: 0;
+  float: left;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+.clear {
+  clear: both;
+}
